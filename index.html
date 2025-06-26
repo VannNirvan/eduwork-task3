@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <!-- Bootstrap CSS -->
+    <link href="asset/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+     body::-webkit-scrollbar {
+     display: none;          /* Chrome, Edge, Safari */
+    }
+
+    .content-section {
+      display: none;
+    }
+    .content-section.active {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-on {
+      background-color: #dc3545;
+      color: white;
+    }
+
+    .btn-on:hover {
+      background-color: #c82333; /* Darker red on hover */
+    }
+
+
+    </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top ">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold d-flex align-items-center text-danger" href="#">
+        <img src="asset/Reality.jpg" alt="Logo" height="40" class="me-2 rounded-circle" />
+        My <span class="ms-1">Portofolio</span>
+      </a>
+
+      <!-- Toggle button (for mobile) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header mt-2 shadow-sm">
+          <h5>Menu</h5>
+          <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+          </div>
+        <div class="offcanvas-body justify-content-end align-items-center gap-2">
+          <ul class="navbar-nav me-3 mb-2 mb-lg-0 gap-2 fw-bold">
+          <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#AboutMe">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Project">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+
+        <!-- Button -->
+        <a href="#" class="btn btn-danger text-white fw-semibold">Downlaod CV</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Home section -->
+  <section class="pt-5 mb-5  shadow-sm " style="scroll-margin-top: 80px; padding-bottom: 200px;" id="Home">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Kolom Teks -->
+        <div class="col-lg-7 col-md-12">
+          <p class="fs-5 fw-bold mb-0 text-start text-sm-center text-lg-start mt-lg-5">Hi I Am</p>
+          <h4 class="fw-bold fs-4 text-danger text-start text-sm-center text-lg-start mb-0">Nirvan Respati Hadi Aminsyah</h4>
+
+          <div class="d-inline-block text-start text-sm-center col-sm-12 text-lg-start">
+            <h1 class="fw-bold mb-0" style="font-size: 60px; letter-spacing: 4px;">Fullstack</h1>
+            <h1 class="fw-bold ms-5 text-danger" style="font-size: 60px; letter-spacing: 4px;">Developer</h1>
+          </div>
+
+          <div class="w-100 w-lg-75 text-sm-center text-lg-start px-3 px-lg-0 mt-3">
+            <p class="text-capitalize" style="font-size: 15px;">
+              Perkenalkan nama saya Nirvan Respati, saya adalah seorang siswa di SMK TELEKOMUNIKASI DU. Saya memiliki ketertarikan di bidang teknologi informasi, terutama dalam pengembangan web dan aplikasi mobile. Saya juga memiliki pengalaman dalam berbagai proyek pengembangan perangkat lunak, baik secara individu maupun tim. Saya selalu berusaha untuk terus belajar dan mengembangkan keterampilan saya di bidang ini.
+            </p>
+          </div>
+
+          <div class="mt-3 text-sm-center text-lg-start">
+            <button type="button" class="btn btn-danger fw-semibold px-4">Hire me :)</button>
+          </div>
+        </div>
+
+        <!-- Kolom Gambar -->
+        <div class="col-lg-5 col-md-12 text-center mt-4 mt-lg-4">
+          <img src="asset/Reality.jpg" alt="Hero Image" class="img-fluid rounded-circle border border-dark" style="max-width: 75%;" />
+          <div class="d-flex justify-content-center mt-3 gap-4">
+            <a href="https://www.instagram.com/orangv_08/" class="d-flex align-items-center justify-content-center rounded-circle bg-danger text-white" style="width: 50px; height: 50px;">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="#" class="d-flex align-items-center justify-content-center rounded-circle border bg-danger text-white" style="width: 50px; height: 50px;">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+              <a href="https://github.com/VannNirvan" class="d-flex align-items-center justify-content-center rounded-circle border bg-danger text-white" style="width: 50px; height: 50px;">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="#" class="d-flex align-items-center justify-content-center rounded-circle border bg-danger text-white" style="width: 50px; height: 50px;">
+                <i class="bi bi-linkedin"></i>
+              </a>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+      <!--Section About me  -->
+  <section id="AboutMe" class="pt-5 shadow-sm" style="margin-top: 100px; scroll-margin-top: 110px; padding-bottom:200px ;">
+    <div class="container">
+      <div id="judul" class="text-center mb-5">
+        <h2 class="fw-bold mb-3 pt-3 text-danger" >AboutMe</h2>
+        <h6 class="w-75 align-items-center mx-auto ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores mollitia pariatur incidunt veniam dolores, quaerat distinctio id quia vitae corporis qui ratione assumenda autem quam repudiandae unde sunt officia recusandae.  </h6>
+      </div>
+
+
+      <!-- Aboutme 1 -->
+      
+      <div class="row g-4">
+        <div class="col-4">
+          <div class=" d-flex  rounded-4" style="border: 3px solid red;">
+            <i class="bi bi-person text-start fs-1 text-danger align-items-center d-flex ms-2"></i>
+              <div class="ms-3 py-2">
+                <h5 class="mb-0 text-danger fw-bold">Full Name</h5>
+                <p class=" mb-0 fw-semibold">Nirvan Respati H</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+          <div class=" d-flex  rounded-4" style="border: 3px solid red;">
+            <i class="ms- bi bi-geo-alt-fill text-start fs-1 text-danger align-items-center d-flex ms-2"></i>
+              <div class="ms-3 py-2">
+                <h5 class="mb-0 text-danger fw-bold">Location</h5>
+                <p class=" mb-0 fw-semibold">Indonesia</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+          <div class=" d-flex  rounded-4" style="border: 3px solid red;">
+            <i class="bi bi-backpack3-fill text-start fs-1 text-danger align-items-center d-flex ms-2"></i>
+              <div class="ms-3 py-2">
+                <h5 class="mb-0 text-danger fw-bold">Work</h5>
+                <p class=" mb-0 fw-semibold">Student</p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+      <!-- Aboutme 2 -->
+      <div class="row g-4 mt-1  pb-5 ">
+        <div class="col-4">
+          <div class=" d-flex  rounded-4" style="border: 3px solid red;">
+            <i class="bi bi-telephone-fill text-start fs-1 text-danger align-items-center d-flex ms-2"></i>
+              <div class="ms-3 py-2">
+                <h5 class="mb-0 text-danger fw-bold">Contact</h5>
+                <p class=" mb-0 fw-semibold">085183383343</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+          <div class=" d-flex  rounded-4" style="border: 3px solid red;">
+            <i class="ms- bi bi-heart-fill text-start fs-1 text-danger align-items-center d-flex ms-2"></i>
+              <div class="ms-3 py-2">
+                <h5 class="mb-0 text-danger fw-bold">Hobby</h5>
+                <p class=" mb-0 fw-semibold">Coding & Typing</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+          <div class=" d-flex  rounded-4" style="border: 3px solid red;">
+            <i class="bi bi-cake-fill text-start fs-1 text-danger align-items-center d-flex ms-2"></i>
+              <div class="ms-3 py-2">
+                <h5 class="mb-0 text-danger fw-bold">Age</h5>
+                <p class=" mb-0 fw-semibold">17 th</p>
+              </div>
+            </div>
+        </div>
+      
+    </div>
+  </section>
+
+    <!-- Section My project -->
+    <div id="Project" class="py-5 " style="margin-top: 130px;">
+    <div class="container py-5 mb-5">
+      <div id="judul" class="text-center mb-4">
+        <h2 class="fw-bold mb-3 text-danger">My Project</h2>
+        <h6 class="w-75 align-items-center mx-auto ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores mollitia pariatur incidunt veniam dolores, quaerat distinctio id quia vitae corporis qui ratione assumenda autem quam repudiandae unde sunt officia recusandae.</h6>
+      </div>
+
+      <div class="container d-flex justify-content-center gap-5">
+        <button class="rounded-3 fw-bold btn btn-show btn-on" onclick="ShowContent('webDev',event)">Web Dev</button>
+        <button class="rounded-3 fw-bold btn btn-show " onclick="ShowContent('bugHunter',event)" >Bug Hunter</button>
+        <button class="rounded-3 fw-bold btn btn-show " onclick="ShowContent('dataAnalist',event)">Data Analist</button>
+      </div>
+
+
+
+      <!-- web Dev -->
+      <div class="row mt-5 content-section active" id="webDev" >
+          <div class="col-4">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <div style="height: 200px;" class="d-flex align-items-center justify-content-center mb-3">
+                  <img src="asset/BliBli-ECommerce-dan-Marketplace-Terbaik-Indonesia-min.png" class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                </div>
+                <h5 class="card-title">Project Web Dev</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellat repudiandae adipisci error consequatur eius est rem voluptas iure incidunt!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <div style="height: 200px;" class="d-flex align-items-center justify-content-center mb-3">
+                  <img src="asset/c1966059-1dda-4cd4-aa75-a0994b3e8c9a.jpeg" class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                </div>
+                <h5 class="card-title">Project Web Dev</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, pariatur! Nam deserunt eius ut harum dolorum molestias, in suscipit. Distinctio!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <div style="height: 200px;" class="d-flex align-items-center justify-content-center mb-3">
+                  <img src="asset/Contoh-Website-Sekolah-SMP-SMA-Luqman-Al-Hakim-1024x576.jpg" class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                </div>
+                <h5 class="card-title">Project Web Dev</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ex numquam at eum minima ducimus autem itaque natus omnis repellat?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Bug hunter -->
+        <div class="row mt-5 content-section" id="bugHunter" >
+          <div class="col-4">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <div style="height: 200px;" class="d-flex align-items-center justify-content-center mb-3">
+                  <img src="asset/bug1.png" class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                </div>
+                <h5 class="card-title">Project bug hunter</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam reprehenderit expedita laborum architecto commodi?</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <div style="height: 200px;" class="d-flex align-items-center justify-content-center mb-3">
+                  <img src="asset/bug2.jpg" class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                </div>
+                <h5 class="card-title">Project bug hunter</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero enim perspiciatis nobis suscipit voluptatibus!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <div style="height: 200px;" class="d-flex align-items-center justify-content-center mb-3">
+                  <img src="asset/bug3.jpg"img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                </div>
+                <h5 class="card-title">Project bug hunter</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quidem sint similique sed reiciendis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Data analist -->
+        <div class="row mt-5 content-section " id="dataAnalist" >
+          <div class="col-4">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <div style="height: 200px;" class="d-flex align-items-center justify-content-center mb-3">
+                  <img src="asset/26-1.jpg" class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                </div>
+                <h5 class="card-title">Project data analist</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellat repudiandae adipisci error consequatur eius est rem voluptas iure incidunt!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <div style="height: 200px;" class="d-flex align-items-center justify-content-center mb-3">
+                  <img src="asset/data2.jpg" class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                </div>
+                <h5 class="card-title">Project Web Dev</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, pariatur! Nam deserunt eius ut harum dolorum molestias, in suscipit. Distinctio!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <div style="height: 200px;" class="d-flex align-items-center justify-content-center mb-3">
+                  <img src="asset/data3.jpg" class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                </div>
+                <h5 class="card-title">Project Web Dev</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ex numquam at eum minima ducimus autem itaque natus omnis repellat?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      
+
+      
+
+  </section>
+
+
+  <script>
+
+    function ShowContent(id,event){
+      document.querySelectorAll('.content-section').forEach(section =>{
+        section.classList.remove('active');
+      });
+
+      document.getElementById(id).classList.add('active');
+
+      // btn on
+
+      document.querySelectorAll('.btn-show').forEach(btn=>{
+        btn.classList.remove('btn-on');
+      });
+      
+      event.target.classList.add('btn-on');
+    }
+  </script>
+
+</body>
+</html>
